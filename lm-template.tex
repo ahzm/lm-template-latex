@@ -1,0 +1,34 @@
+\documentclass[a4paper, 12pt]{lettre}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{eurosym}
+\usepackage[frenchb]{babel}
+\usepackage{numprint}
+
+%pour réduire l'espacement, entre l'objet et le corps
+%to reduce the distance between the object and the body
+\usepackage{etoolbox}
+\patchcmd{\letteropening}{2\openingspace}{-0.5cm}{}{}
+
+\begin{document}
+% Mot après "lettre-" dans le nom de fichier .cfg
+% Word after "letter-" in the .cfg file name
+\institut{name}
+
+\begin{letter}{Un destinataire\\Une addresse\\12345 Une ville}
+\def\concname{Objet :~} % On définit ici la commande 'objet'
+\conc{ceci est mon objet}
+
+\opening{Madame, Monsieur,}
+
+\textbf{partie du corps.}
+
+\closing{Je vous prie d'agréer, Madame, Monsieur, mes salutations distinguées.}
+%\cc{Listes des autres destinataires}
+%\encl{Description des pièces jointes}
+%\ps{PS :~}{un post-scriptum}
+\end{letter}
+
+\end{document}
