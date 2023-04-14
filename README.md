@@ -19,8 +19,8 @@ Ce projet se concentre sur la création de lettres de motivation à l'aide de ce
 
 **Remarque:** *Si le nom du fichier ".cfg" est modifié, les références dans le fichier ".tex" devront être modifiées.*
 
-Par exemple : le nom original du fichier ".cfg" est "lettre-name.cfg", le nom modifié est "letrre-newname.cfg".
+Par exemple : le nom original du fichier ".cfg" est "lettre-**name**.cfg", le nom modifié est "letrre-**newname**.cfg".
 
-Dans le fichier ".tex", remplacez la partie "\institut{name}" du code par le même nom, "\institut{newname}".
+Dans le fichier ".tex", remplacez la partie "**\institut{name}**" du code par le même nom, "**\institut{newname}**".
 
 **Étape 2:** Compilez et exécutez simplement le fichier tex
